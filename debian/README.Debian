@@ -1,0 +1,32 @@
+See upstream README file for configuration and usage instruction.
+Almost all information from that file is relevant.  However, from
+the section "INSTALLATION", only this is relevant:
+
+  * To be performed in place of 'make initdb' from the README's installation
+    instructions.
+
+    Initialize the database
+
+      rt-setup-database --action insert --datafile \
+         /usr/share/request-tracker4/plugins/RT-Extension-ResetPassword/etc/initialdata
+
+    Only run this the first time you install this module.
+
+    If you run this twice, you may end up with duplicate data in your
+    database.
+
+    If you are upgrading this module, check for upgrading instructions
+    in case changes need to be made to your database.
+
+  * Edit a file like e.g. /etc/request-tracker4/RT_SiteConfig.d/90-local.pm
+    and add the line:
+
+      Plugin('RT::Extension::ResetPassword');
+
+  * Clear your mason cache
+
+      rm -rf /var/cache/request-tracker4/mason_data/obj
+
+  * Restart your webserver
+
+ -- Andrew Ruthven <andrew@etc.gen.nz>  Fri, 02 Feb 2018 03:55:28 +0000

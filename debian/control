@@ -1,0 +1,20 @@
+Source: rt-extension-resetpassword
+Section: perl
+Priority: optional
+Maintainer: Andrew Ruthven <andrew@etc.gen.nz>
+Build-Depends: debhelper (>= 9.20120312)
+Build-Depends-Indep: perl
+ , libmodule-install-rtx-perl
+Standards-Version: 3.9.8
+Vcs-Git: https://salsa.debian.org/request-tracker-team/rt-extension-resetpassword.git
+Vcs-Browser: https://salsa.debian.org/request-tracker-team/rt-extension-resetpassword
+Homepage: https://metacpan.org/release/RT-Extension-ResetPassword
+
+Package: rt4-extension-resetpassword
+Architecture: all
+Depends: ${misc:Depends}, ${perl:Depends},
+ request-tracker4,
+ perl
+Description: Reset Password extension (Request Tracker)
+ This extension allows users to get a reset password link in Request Tracker.
+ .

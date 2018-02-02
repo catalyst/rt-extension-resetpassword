@@ -1,0 +1,5 @@
+rt-extension-resetpassword (1.04-1) unstable; urgency=low
+
+  * Initial Release (Closes #889636)
+
+ -- Andrew Ruthven <andrew@etc.gen.nz>  Fri, 02 Feb 2018 03:55:28 +0000
