@@ -1,3 +1,10 @@
+rt-extension-resetpassword (1.06-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump compat level to v10.
+
+ -- Andrew Ruthven <puck@catalyst.net.nz>  Wed, 13 May 2020 17:58:04 +0000
+
 rt-extension-resetpassword (1.04-1) unstable; urgency=low
 
   * Initial Release (Closes #889636)
